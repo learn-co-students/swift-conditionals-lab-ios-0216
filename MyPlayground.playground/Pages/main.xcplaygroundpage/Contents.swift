@@ -25,12 +25,15 @@ let b = 32
 ### 1. Print the result of a greater than or equal to b
 */
 // write your code here
-
+a >= b
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
+
+a % b
+
 
 
 /*: Question 3
@@ -38,32 +41,43 @@ let b = 32
 */
 // write your code here
 
+y * b <= a
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
 
+a <= b
 
 
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
 */
 // write your code here
+if a % b = 0  {
+    print(true)
+}
 
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
-
+if a / b > x{
+    print(true)
+}
 
 
 /*: Question 7
 ### 7. Print "true" if y divided by x is greater than three, otherwise print false
 */
 // write your code here
-
+if y / x > 3 {
+    print(true)
+}else{
+    print(false)
+}
 
 
 
@@ -72,7 +86,9 @@ let b = 32
 */
 // write your code here
 
-
+if (y > x , a / b > 9)  {
+    print(true)
+}
 
 
 /*: Question 9
@@ -80,6 +96,14 @@ let b = 32
 */
 // write your code here
 
+func isGreater( one: Int, two: Int){
+    if one > two {
+        return true
+    }else {
+        return false
+    }
+}
+isGreater(2, two: 1)
 
 
 
@@ -89,6 +113,27 @@ let b = 32
 ### 10. Write a function "isForceWith" that takes a String argument and returns true if the argument is the name of someone with whom the force is strong, and otherwise returns false. People who have the force are Luke, Leia, Anakin, Obi Wan, Yoda, Vader.
 */
 // write your code here
+func isForceWith (name: String){
+    if name == "Luke" {
+        print(true)
+    } else if name == "Leia" {
+        print(true)
+    }else if name == "Anakin" {
+        print(true)
+    }else if name == "Obi Wan" {
+        return true
+    }else if name == "Yoda" {
+        return true
+    }else if name == "Vader" {
+        return true
+    }else {
+        return false
+    }
+    
+    
+}
+isForceWith("Vader")
+
 
 
 
@@ -97,6 +142,14 @@ let b = 32
 */
 // write your code here
 
+func bankInfo(myBankAccount:Int, yourBankAccount:Int){
+    
+    myBankAccount + 10
+    yourBankAccount - 10
+    
+    
+}
+bankInfo(200, yourBankAccount: 20)
 
 
 
